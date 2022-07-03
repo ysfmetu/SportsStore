@@ -4,9 +4,21 @@
       <span class="navbar-brand ml-2">SPORTS STORE</span>
     </div>
   </div>
-  <div class="row text-white">
-    <div class="col-3 bg-info p-2">
-      {{getCategories().length}} Categories
+  <div class="row text-dark">
+    <div class="col-3  p-2">
+   <!--   {{getCategories().length}} Categories-->
+      <div class="d-grid gap-2">
+        <button class="btn btn-outline-success" (click)="changeCategory()">
+            Home
+        </button>
+        <button *ngFor="let category of getCategories()"
+                class="btn btn-outline-success"
+                [class.active]="category==selectedCategory"
+                (click)="changeCategory(category)">
+          {{category}}
+        </button>
+
+      </div>
     </div>
     <div class="col-9 bg-success p-2">
       <!--{{getProducts().length}} Products-->

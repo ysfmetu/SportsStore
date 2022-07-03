@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import {Component} from '@angular/core';
 import {ProductRepository} from "../../model/productRepository";
 import {Product} from "../../model/product";
 
@@ -8,18 +8,22 @@ import {Product} from "../../model/product";
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent {
+  public selectedCategory: string | undefined;
 
-  constructor(private repository:ProductRepository) {
+  constructor(private repository: ProductRepository) {
   }
-
 
   getProducts(): Product[] {
-    return this.repository.getProducts();
+    return this.repository.getProducts(this.selectedCategory);
   }
+
   getCategories(): string[] {
     return this.repository.getCategories();
   }
 
+  changeCategory(newCategory?: string) {
+    this.selectedCategory = newCategory;
+       }
 
 
 }
