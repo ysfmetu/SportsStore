@@ -1,1 +1,1 @@
-![image](https://user-images.githubusercontent.com/45200802/177049492-11858fab-ba68-412a-bccb-5edffccaaf58.png)<img width="912" alt="Ekran Alıntısı" src="https://user-images.githubusercontent.com/45200802/177049529-d6e3757c-0165-45fa-8682-5b9ad162f488.PNG">
+<img width="912" alt="Ekran Alıntısı" src="https://user-images.githubusercontent.com/45200802/177049529-d6e3757c-0165-45fa-8682-5b9ad162f488.PNG">
