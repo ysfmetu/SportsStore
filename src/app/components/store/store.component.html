@@ -9,7 +9,16 @@
       {{getCategories().length}} Categories
     </div>
     <div class="col-9 bg-success p-2">
-      {{getProducts().length}} Products
+      <!--{{getProducts().length}} Products-->
+      <div *ngFor="let product of getProducts()" class="card m-1 p-1 bg-dark">
+        <h4>
+          {{product.name}}
+          <span class="badge rounded-pill bg-secondary" style="float:right">
+                        {{ product.price | currency:'\u20BA':"symbol":"2.2-2" }}
+          </span>
+        </h4>
+
+      </div>
     </div>
   </div>
 </div>
